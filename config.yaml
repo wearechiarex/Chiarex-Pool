@@ -1,0 +1,39 @@
+pool_info:
+  default_res: Chiarex Official TR Chia Pool
+  name: Chiarex Official TR Chia Pool
+  logo_url: https://www.chiarex.net/images/brands/chiarex-logo.svg
+  description: Chiarex official TR Chia pool allows you to pool with low fees, paying out daily using Chia.
+welcome_message: "Welcome to Chiarex official TR Chia pool!"
+pool_fee: 0
+pool_url: https://tr.chiarex.net
+min_difficulty: 10
+default_difficulty: 10
+default_target_address: xch1ycea3skl3sn2vw29clc0sffcwa6988txzf3actc0yzsjq5tz2qks56qrt3
+pool_fee_address: xch1ycea3skl3sn2vw29clc0sffcwa6988txzf3actc0yzsjq5tz2qks56qrt3
+wallet_fingerprint: 3664509480
+authentication_token_timeout: 5
+wallet_id: 1
+node_rpc_port: 8555
+wallet_rpc_port: 9256
+partial_time_limit: 20
+partial_confirmation_delay: 300
+scan_start_height: 1030000
+collect_pool_rewards_interval: 60
+confirmation_security_threshold: 32
+payment_interval: 3600
+max_additions_per_transaction: 400
+number_of_partials_target: 300
+time_target: 86400
+relative_lock_height: 64
+logging:
+  log_path: /home/chiarex/logs/pool
+  log_filename: server.log
+  log_level: INFO
+  log_maxfilesrotation: 20
+  log_stdout: false
+server:
+  server_host: 0.0.0.0
+  server_port: 80
+  server_use_ssl: false
+  server_ssl_crt: config/ssl/domain/domain_srv.crt
+  server_ssl_key: config/ssl/domain/domain_srv.key
