@@ -1,35 +1,36 @@
 pool_info:
-  default_res: Chia reference pool
-  name: The Reference Pool
-  logo_url: https://www.chia.net/img/chia_logo.svg
-  description: (example) The Reference Pool allows you to pool with low fees, paying out daily using Chia.
-welcome_message: "Welcome to the reference pool!"
+  default_res: Chiarex Official TR Chia Pool
+  name: Chiarex Official TR Chia Pool
+  logo_url: https://www.chiarex.net/images/brands/chiarex-logo.svg
+  description: Chiarex official TR Chia pool allows you to pool with low fees, paying out daily using Chia.
+welcome_message: "Welcome to Chiarex official TR Chia pool!"
 pool_fee: 0.01
-pool_url: http://10.0.0.45
+block_claim_fee: 0
+pool_url: https://tr.chiarex.net
 min_difficulty: 10
 default_difficulty: 10
-default_target_address: txch1h8vdax8vtspx7yt8kz6cwu2awymlgwmdr4qts8v643kusd2lmc5qht7ltq
-pool_fee_address: txch1jhydnk47xl40jn3pgwjd708uk2wqzqexagy9xxjcwt2qeaumv3fqcrw6e2
-wallet_fingerprint: 3967641394
+default_target_address: xch1s8qx9z8fr4cx7px4hav2mqxpmugh8xs8l4nrj6uvt3hundwcz4xs6cxzn0
+pool_fee_address: xch1yqlllej994wpfs90m2dp76g4szs5eaur03es70s4vhlp24scmyusdqxd48
+wallet_fingerprint: 2034910021
 authentication_token_timeout: 5
 wallet_id: 1
 node_rpc_port: 8555
 wallet_rpc_port: 9256
-partial_time_limit: 25
+partial_time_limit: 20
 partial_confirmation_delay: 300
-scan_start_height: 1000
-collect_pool_rewards_interval: 600
+scan_start_height: 1500000
+collect_pool_rewards_interval: 60
 confirmation_security_threshold: 32
-payment_interval: 600
+payment_interval: 3600
 max_additions_per_transaction: 400
 number_of_partials_target: 300
 time_target: 86400
-relative_lock_height: 32
+relative_lock_height: 64
 logging:
-  log_path: /var/log/chia
-  log_filename: pool-server.log
+  log_path: /home/chiarex/logs/pool
+  log_filename: server.log
   log_level: INFO
-  log_maxfilesrotation: 7
+  log_maxfilesrotation: 20
   log_stdout: false
 server:
   server_host: 0.0.0.0
@@ -37,3 +38,4 @@ server:
   server_use_ssl: false
   server_ssl_crt: config/ssl/domain/domain_srv.crt
   server_ssl_key: config/ssl/domain/domain_srv.key
+
